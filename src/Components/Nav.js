@@ -1,18 +1,19 @@
 import React from 'react'
+import '../App.css';
 
 function Nav() {
   return (
 
-    <div id="nav">
+    <nav id="navbar">
         <div className="logo-container font-playfair">
             <p>g.</p>
         </div>
-        <div className="nav-links font-lato">
+        <div className="nav-links">
             <p>home</p>
             <p>about</p>
             <p>projects</p>
         </div>
-    </div>
+    </nav>
   )
 }
 
