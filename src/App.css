@@ -13,11 +13,22 @@
   font-family: "Lato", sans-serif;
 }
 
+#nav {
+  flex-direction: row;
+  
+}
+
+#nav.logo-container {
+  font-size: 50px;
+  color: green;
+}
+
+
 
 /* Footer Styles */
 #footer {
   background-color: #2d2e2e;
   color: #fff;
   height: 6vh;
-  padding: 1vh 0;
+  padding: 2vh 0;
 }

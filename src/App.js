@@ -1,9 +1,11 @@
 import './App.css';
-import Footer from './Components/Footer'
+import Footer from './Components/Footer';
+import Nav from './Components/Nav';
 
 function App() {
   return (
     <div className="App">
+      <Nav />
       <Footer />
       
     </div>
