@@ -1,4 +1,12 @@
 .App {
   text-align: center;
+  min-width: 280px;
+  width: '100%';
 }
 
+#footer {
+  background-color: #2d2e2e;
+  color: #fff;
+  height: 6vh;
+  padding: 1vh 0;
+}
