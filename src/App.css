@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 h5 {
@@ -48,6 +49,7 @@ button:hover{
   justify-content: space-between;
   margin: 0 10px;
   height: 6vh;
+  width:100%;
   
 }
 
@@ -63,6 +65,62 @@ button:hover{
   font-size: 16px;
 }
 
+@media screen and (max-width > 1200px) {
+  #navbar .nav-links {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+}
+
+
+@media screen and (max-width: 720px) {
+  #navbar {
+    flex-direction: column;
+    height: 10vh;
+  }
+
+  #navbar .nav-links {
+    width: 50%;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 550px ) {
+  #navbar {
+    flex-direction: column;
+    height: 20vh;
+  }
+
+  #navbar .nav-links {
+    flex-direction: column;
+    width: 50%;
+    padding-bottom: 10px;
+  }
+  #navbar p {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 375px ) {
+  #navbar {
+    flex-direction: column;
+    height: 20vh;
+  }
+
+  #navbar .nav-links {
+    flex-direction: column;
+    width: 50%;
+    padding-bottom: 10px;
+  }
+  #navbar p {
+    margin-top: 10px;
+  }
+}
+
 
 /* Homepage Styles */
 #homepage {
@@ -71,8 +129,10 @@ button:hover{
   flex-direction: column;
   justify-content: space-between;
   background-color: pink;
-  overflow: auto;
+  /* overflow: auto; */
   justify-content: center;
+  padding: 10px;
+  align-self: center;
 }
 
 #homepage .container-1 {
@@ -84,18 +144,22 @@ button:hover{
 
 #homepage .intro-text {
   text-align: left;
+  width:600px;
 }
 
 #homepage .intro-photo {
   overflow: visible;
+  width:600px;
+  justify-self: flex-end;
+  display: inline-block;
 }
 
 #homepage .photo {
-  width: 25%;
-  border: solid 7px hotpink;
+  width: 40%;
+  border: solid 5px hotpink;
   border-radius: 30%;
   z-index: 10;
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 
 #homepage .contact-links{
@@ -105,7 +169,6 @@ button:hover{
   flex-direction: row;
   justify-content: space-evenly;
   margin-top: 20px;
-  background-color: pink;
 }
 
 #homepage .social-icons {
@@ -115,24 +178,8 @@ button:hover{
   font-size: 36px;
 }
 
-
-/* Footer Styles */
-#footer {
-  background-color: #2d2e2e;
-  color: #fff;
-  padding: 2% 0;
-  align-items: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-
-/* Media Queries */
 @media screen and (max-width > 1200px) {
-  #navbar .nav-links {
-    width: 15%;
-  }
+  
 }
 
 @media screen and (max-width: 900px) {
@@ -152,51 +199,17 @@ button:hover{
     margin-top: 10px;
     font-size: 30px;
   }
-
-  #footer {
-    padding: 4% 0;
-  }
 }
 
 
 @media screen and (max-width: 720px) {
-  #navbar {
-    flex-direction: column;
-    height: 10vh;
-  }
-
-  #navbar .nav-links {
-    width: 50%;
-    justify-content: space-between;
-    padding-bottom: 10px;
-  }
-
   #homepage .photo {
     width: 50%;
     border: solid 5px hotpink;
   }
-
-  #footer {
-    padding: 6% 0;
-  }
-
-
 }
 
 @media screen and (max-width: 550px ) {
-  #navbar {
-    flex-direction: column;
-    height: 20vh;
-  }
-
-  #navbar .nav-links {
-    flex-direction: column;
-    width: 50%;
-    padding-bottom: 10px;
-  }
-  #navbar p {
-    margin-top: 10px;
-  }
   #homepage .container-1 {
     flex-direction: column;
     justify-content: center;
@@ -218,27 +231,49 @@ button:hover{
     margin-top: 10px;
     font-size: 36px;
   }
-
-
 }
 
 @media screen and (max-width: 375px ) {
-  #navbar {
-    flex-direction: column;
-    height: 20vh;
-  }
+ 
+}
 
-  #navbar .nav-links {
-    flex-direction: column;
-    width: 50%;
-    padding-bottom: 10px;
-  }
-  #navbar p {
-    margin-top: 10px;
-  }
+
+/* Footer Styles */
+#footer {
+  background-color: #2d2e2e;
+  color: #fff;
+  padding: 10px 0;
+  height: 100px;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#footer p{
+  line-height: 100px;
+}
+
+@media screen and (max-width > 1200px) {
+  
+}
+
+@media screen and (max-width: 900px) {
 
 }
 
+
+@media screen and (max-width: 720px) {
+  
+}
+
+@media screen and (max-width: 550px ) {
+  
+}
+
+@media screen and (max-width: 375px ) {
+ 
+}
 
 
 /* @media screen and (max-width: 280px ) {

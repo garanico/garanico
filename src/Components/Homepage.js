@@ -4,13 +4,12 @@ import grace from '../img/grace.JPG';
 
 function Homepage() {
   return (
-    <>
     <main id="homepage">
       <section className="container-1">
 
       <div className="intro-photo">
-          <img className="photo" src={grace} alt="Grace Aranico's headshot photo" />
-        </div>
+        <img className="photo" src={grace} alt="Grace Aranico's headshot" />
+      </div>
 
         <div className="intro-text">
           <p>Oh hey!</p>
@@ -26,15 +25,15 @@ function Homepage() {
           </div>
 
           <div className="social-icons">
-            <a href="https://github.com/garanico" target="_blank">
+            <a href="https://github.com/garanico" target="_blank" rel="noopener">
               <i className="fab fa-github-square"></i>
             </a>
 
-            <a href="https://linkedin.com/in/gracearanico/" target="_blank">
+            <a href="https://linkedin.com/in/gracearanico/" target="_blank" rel="noopener">
               <i className="fab fa-linkedin"></i>
             </a>
 
-            <a href="https://instagram.com/gracieissoamzin" target="_blank">
+            <a href="https://instagram.com/gracieissoamzin" target="_blank" rel="noopener">
               <i className="fab fa-instagram"></i>
             </a>  
           </div>
@@ -50,8 +49,8 @@ function Homepage() {
 
 
       </div>
+      
     </main>
-    </>
   )
 }
 
