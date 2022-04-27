@@ -2,13 +2,14 @@ import './App.css';
 import Footer from './Components/Footer';
 import Nav from './Components/Nav';
 import Homepage from './Components/Homepage';
+import About from './Components/About';
 
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <Homepage />
-      <Footer />
+      {/* <Nav /> */}
+      <About />
+      {/* <Footer /> */}
       
     </div>
   );

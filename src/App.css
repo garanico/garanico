@@ -1,12 +1,16 @@
 /* Global Styles */
 * {
-  margin: 0;
+  margin: 0; 
   padding: 0;
   box-sizing: border-box;
 }
 
-h5 {
-  font-family: "Lato", sans-serif;
+h1 {
+  padding-bottom: 10px;
+}
+
+p {
+  padding-bottom: 20px;
 }
 
 button {
@@ -16,11 +20,17 @@ button {
   border-radius: 5px;
   width: 150px;
   text-align: center;
+  margin-top: 10px;
 }
 
 button:hover{
   filter: drop-shadow(1px 7px 0.75rem #ccc);
   
+}
+
+.container {
+  margin: auto;
+  max-width: 1200px;
 }
 
 .App {
@@ -47,10 +57,9 @@ button:hover{
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 10px;
+  padding: 0 10px;
   height: 6vh;
-  width:100%;
-  
+  width: 100%;
 }
 
 #navbar .logo-container {
@@ -231,6 +240,116 @@ button:hover{
     margin-top: 10px;
     font-size: 36px;
   }
+}
+
+@media screen and (max-width: 375px ) {
+ 
+}
+
+/* About Styles */
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
+  padding: 10px;
+}
+
+#about .about-me {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+#about .about-text {
+  width: 55%;
+  justify-content: center;
+  margin-left: 50px;
+
+}
+
+#about .about-text h1{
+  font-size: 36px;
+  text-align: left;
+}
+
+#about .about-text p {
+  font-size: 18px;
+  text-align: left;
+}
+
+
+#about .about-photo {
+  width: 45%;
+  display: flex;
+  align-items: center;
+}
+
+#about .about-photo img {
+  margin: auto;
+}
+
+
+
+@media screen and (max-width > 1200px) {
+  
+}
+
+@media screen and (max-width: 900px) {
+  #about .about-text {
+    width: 45%;
+    justify-content: center;
+    margin-left: 20px;
+  }
+  #about .about-photo {
+    width: 55%;
+  }
+
+}
+
+
+@media screen and (max-width: 720px) {
+  #about .about-text h1{
+    font-size: 30px;
+  }
+
+  #about .about-text {
+    text-align: center;
+  }
+  
+  #about .about-text p {
+    font-size: 16px;
+  }
+  #about .about-photo {
+    width: 80%;
+  }
+  
+}
+
+@media screen and (max-width: 550px ) {
+  #about .about-me {
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: auto;
+    margin-bottom: 20px;
+    justify-content: center;
+    
+  }
+  #about .about-text {
+    width: 100%;
+    margin: 0 ;
+  }
+
+  #about .about-text h1,p {
+    
+    text-align: center;
+  }
+  #about .about-photo {
+    display: flex;
+    align-self: center;
+    width: 80%;
+  }
+
 }
 
 @media screen and (max-width: 375px ) {
