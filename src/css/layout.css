@@ -67,7 +67,7 @@ button:hover{
   width: 100%;
 }
 
-#navbar .logo-container {
+#navbar .logo-container a {
   font-size: 36px;
 }
 
@@ -77,6 +77,21 @@ button:hover{
   width: 30%;
   justify-content: space-between;
   font-size: 16px;
+  text-decoration: none;
+}
+
+#navbar a {
+  text-decoration: none;
+}
+
+#navbar a:visited {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#navbar a:hover, a:active {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 @media screen and (max-width > 1200px) {
@@ -476,7 +491,6 @@ button:hover{
   width: 400px;
   margin: 10px;
   justify-content: center;
-  border: solid 1px green;
 }
 
 
@@ -497,7 +511,6 @@ button:hover{
     width: 350px;
     height: 306px;
     justify-content: center;
-    border: solid 1px green;
   }
 
   
@@ -519,7 +532,6 @@ button:hover{
     width: 300px;
     height: 263px;
     justify-content: center;
-    border: solid 1px green;
   }
 }
 

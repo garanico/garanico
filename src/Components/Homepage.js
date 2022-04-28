@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css';
+import '../css/layout.css';
 import grace from '../img/grace.JPG';
 
 function Homepage() {
@@ -20,7 +20,7 @@ function Homepage() {
           <div className="contact-links">
             <div className="button">
               <button>
-                <p>view my resume</p>
+                view my resume
               </button>
             </div>
 

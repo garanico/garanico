@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../../src/App.css';
+import '../../../src/css/layout.css';
 import decidr from '../../img/project-img/decidr.png';
 import hauntedHouse from '../../img/project-img/haunted-house.png'
 import magic8Ball from '../../img/project-img/magic8-ball.png'

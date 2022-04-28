@@ -1,17 +1,30 @@
 import React from 'react'
-import '../App.css';
+import { Link } from 'react-router-dom';
+//css files
+import '../css/layout.css';
+import '../css/darkMode.css';
 
 function Nav() {
   return (
 
     <nav id="navbar">
         <div className="logo-container font-playfair">
-            <p>g.</p>
+          <Link className="link" to={"/"}>
+            g.
+          </Link>
         </div>
         <div className="nav-links">
-            <p>home</p>
-            <p>about</p>
-            <p>projects</p>
+            <Link to={"/"}>
+              home
+            </Link>
+
+            <Link to={"about"}>
+              about
+            </Link>
+
+            <Link to={"projects"}>
+              projects
+            </Link>   
         </div>
     </nav>
   )

@@ -1,5 +1,8 @@
 import React from 'react'
-import '../App.css';
+
+//css files
+import '../css/layout.css'
+import '../css/darkMode.css'
 import grace from '../img/grace.JPG';
 
 
