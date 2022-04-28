@@ -20,7 +20,7 @@ button {
   border-radius: 5px;
   width: 150px;
   text-align: center;
-  margin-top: 10px;
+  margin: 10px 0 10px 0;
 }
 
 button:hover{
@@ -47,6 +47,10 @@ button:hover{
 
 .font-lato {
   font-family: "Lato", sans-serif;
+}
+
+.fa-git{
+  filter: drop-shadow(1px 7px 0.75rem #ccc);
 }
 
 
@@ -250,9 +254,11 @@ button:hover{
 #about {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   justify-content: center;
   overflow: auto;
   padding: 10px;
+  padding-bottom: 100px;
 }
 
 #about .about-me {
@@ -289,11 +295,69 @@ button:hover{
   margin: auto;
 }
 
-
-
-@media screen and (max-width > 1200px) {
-  
+.skills {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+.skills h2 {
+  font-size: 36px;
+}
+
+.skills-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 70%;
+}
+
+.fab, .fas, .far{
+  font-size: 36px;
+  margin: 0 10px 0 10px;
+  color: #343a40;
+}
+
+.skill-icon{
+  font-size: 20px;
+  text-align: center;
+}
+
+.icon-container{
+  padding: 10px;
+}
+
+.contact {
+  width: 100%;
+  background-color: pink;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 75%;
+  margin-top: 10px;
+  padding: 40px 0 20px 0;
+}
+
+#about .contact-links{
+  display: flex;
+  width: 50%;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: auto;
+  line-height: 50%;
+}
+
+#about .social-icons {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 36px;
+}
+
 
 @media screen and (max-width: 900px) {
   #about .about-text {
@@ -304,7 +368,17 @@ button:hover{
   #about .about-photo {
     width: 55%;
   }
-
+  .skills-icons {
+    width: 100%;
+  }
+  #about .contact-links{
+    flex-direction: column;
+  }
+  #about .social-icons {
+    width: 30%;
+    font-size: 30px;
+    margin: 10px 0 10px 0;
+  }
 }
 
 
@@ -312,7 +386,6 @@ button:hover{
   #about .about-text h1{
     font-size: 30px;
   }
-
   #about .about-text {
     text-align: center;
   }
@@ -322,6 +395,12 @@ button:hover{
   }
   #about .about-photo {
     width: 80%;
+  }
+  .skills-icons {
+    width: 100%;
+  }
+  .skills h2{
+    font-size: 30px;
   }
   
 }
@@ -339,9 +418,7 @@ button:hover{
     width: 100%;
     margin: 0 ;
   }
-
   #about .about-text h1,p {
-    
     text-align: center;
   }
   #about .about-photo {
@@ -349,11 +426,19 @@ button:hover{
     align-self: center;
     width: 80%;
   }
-
 }
 
 @media screen and (max-width: 375px ) {
- 
+  .fab, .fas, .far{
+    font-size: 25px;
+    margin: 0 5px 0 5px;
+  }
+  .skill-icon{
+    font-size: 16px;
+  }
+  .icon-container{
+    padding: 5px;
+  }
 }
 
 
@@ -367,6 +452,7 @@ button:hover{
   position: fixed;
   bottom: 0;
   width: 100%;
+  margin-top: auto;
 }
 
 #footer p{

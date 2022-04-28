@@ -18,25 +18,25 @@ function Homepage() {
 
 
           <div className="contact-links">
-          <div className="button">
-            <button>
-              <p>view my resume</p>
-            </button>
-          </div>
+            <div className="button">
+              <button>
+                <p>view my resume</p>
+              </button>
+            </div>
 
-          <div className="social-icons">
-            <a href="https://github.com/garanico" target="_blank" rel="noopener">
-              <i className="fab fa-github-square"></i>
-            </a>
+            <div className="social-icons">
+              <a href="https://github.com/garanico" target="_blank" rel="noopener">
+                <i className="fab fa-github-square"></i>
+              </a>
 
-            <a href="https://linkedin.com/in/gracearanico/" target="_blank" rel="noopener">
-              <i className="fab fa-linkedin"></i>
-            </a>
+              <a href="https://linkedin.com/in/gracearanico/" target="_blank" rel="noopener">
+                <i className="fab fa-linkedin"></i>
+              </a>
 
-            <a href="https://instagram.com/gracieissoamzin" target="_blank" rel="noopener">
-              <i className="fab fa-instagram"></i>
-            </a>  
-          </div>
+              <a href="https://instagram.com/gracieissoamzin" target="_blank" rel="noopener">
+                <i className="fab fa-instagram"></i>
+              </a>  
+            </div>
           </div>
 
         </div>
