@@ -1,6 +1,5 @@
 button {
-    background-color: black;
-    color: white;
+    background-color: #26ffe9;
   }
 
 button:hover{
@@ -13,5 +12,5 @@ button:hover{
 
 
 #homepage .photo {
-    border-color: lightblue;
+    border-color: hotpink;
 }

@@ -2,9 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 //css files
 import '../css/layout.css';
-import '../css/darkMode.css';
+// import darkModeCSS from  '../css/darkMode.css';
 
-function Nav() {
+function Nav({ checked }) {
   return (
 
     <nav id="navbar">

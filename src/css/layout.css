@@ -15,7 +15,7 @@ p {
 }
 
 button {
-  background-color: #26ffe9;
+  /* background-color: #26ffe9; */
   border-style: none;
   padding: 10px;
   border-radius: 5px;
@@ -24,10 +24,10 @@ button {
   margin: 10px 0 10px 0;
 }
 
-button:hover{
+/* button:hover{
   filter: drop-shadow(1px 7px 0.75rem #ccc);
   
-}
+} */
 
 .container {
   margin: auto;
@@ -50,9 +50,9 @@ button:hover{
   font-family: "Lato", sans-serif;
 }
 
-.fa-git{
+/* .fa-git{
   filter: drop-shadow(1px 7px 0.75rem #ccc);
-}
+} */
 
 
 
@@ -185,7 +185,9 @@ button:hover{
 
 #homepage .photo {
   width: 40%;
-  border: solid 5px hotpink;
+  border-style: solid;
+  border-width: 5px;
+  border-color: hotpink;
   border-radius: 30%;
   z-index: 10;
   transform: scale(1.3);
@@ -538,10 +540,14 @@ button:hover{
 
 /* Footer Styles */
 #footer {
-  background-color: #2d2e2e;
-  color: #fff;
+  display: flex;
+  flex-direction: column;
+  background-color: hotpink;
+  /* background-color: #2d2e2e; */
+  border: solid 1px hotpink;
+  /* color: white; */
   padding: 10px 0;
-  height: 100px;
+  height: 500px;
   align-items: center;
   position: fixed;
   bottom: 0;
@@ -550,7 +556,13 @@ button:hover{
 }
 
 #footer p{
-  line-height: 100px;
+  /* line-height: 100px; */
+}
+#footer .switch {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  border: solid 1px black;
 }
 
 @media screen and (max-width > 1200px) {

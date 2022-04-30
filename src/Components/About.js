@@ -2,16 +2,16 @@ import React from 'react'
 
 //css files
 import '../css/layout.css'
-import '../css/darkMode.css'
+// import darkModeCSS from '../css/darkMode.css'
 import grace from '../img/grace.JPG';
 
 
-function About() {
+function About({ checked }) {
   return (
-    <div id="about">
+    <main id="about">
 
       {/* About Me Section */}
-        <div className="about-me">
+        <section className="about-me">
           <div className="about-text">
             <h1 className="font-playfair">about me</h1>
             
@@ -34,9 +34,9 @@ function About() {
           <div className="about-photo">
             <img className="about-photo" src={grace} alt="Grace Aranico's headshot" />
           </div>
-        </div>
+        </section>
 
-        <div className="skills">
+        <section className="skills">
           <h2 className="font-playfair">Skills</h2>
 
           <div className="skills-icons">
@@ -107,9 +107,9 @@ function About() {
             </div>
 
           </div>
-        </div>
+        </section>
 
-        <div className="contact">
+        <section className="contact">
           <div className="contact-text">
             <p>
               If you ever want to have a fun discussion about Harry Potter or just want a quick chat, you can find me on social media or you can send me an email.  
@@ -138,12 +138,12 @@ function About() {
             </div>
           </div>
 
-        </div>
+        </section>
 
 
 
     
-    </div>
+    </main>
   )
 }
 

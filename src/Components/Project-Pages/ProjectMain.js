@@ -1,12 +1,17 @@
 import React from 'react'
+
+//css files
 import '../../../src/css/layout.css';
+// import darkModeCSS from  '../../../src/css/darkMode.css';
+
+//images
 import decidr from '../../img/project-img/decidr.png';
 import hauntedHouse from '../../img/project-img/haunted-house.png'
 import magic8Ball from '../../img/project-img/magic8-ball.png'
 import triviaChill from '../../img/project-img/trivia-chill.png'
 import w4b from '../../img/project-img/w4b.png'
 
-function ProjectMain() {
+function ProjectMain({ checked }) {
   return (
     <main id="projects">
       <div className="project-heading">
