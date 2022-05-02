@@ -1,10 +1,9 @@
-import { useState, createContext } from 'react';
+import { useState, useEffect} from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 
 //css files
 import layout from './css/layout.css';
-import lightModeCSS from './css/lightMode.css';
-import darkModeCSS from './css/darkMode.css';
+
 
 //components
 import Footer from './Components/Footer';
@@ -13,30 +12,33 @@ import Homepage from './Components/Homepage';
 import About from './Components/About';
 import ProjectMain from './Components/Project-Pages/ProjectMain';
 
-const ThemeContext = createContext(null);
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
-    const darkTheme = (event) => {
-        setDarkMode(event.target.checked);
-    }
-    console.log('toggle', darkTheme);
-
-    const isDarkMode = () => darkTheme === true ? {darkModeCSS} : {lightModeCSS}
-    
-
+  useEffect (
+    () => {
+      let head = document.head;
+      let link = document.createElement("link");
+      link.type = "text/css";
+      link.rel = "stylesheet";
+      link.href = darkMode ? "./css/darkModeCSS.css" : "./css/lightMode.css";
+      head.appendChild(link);
+      return () => {
+        head.removeChild(link);
+      }
+    },[darkMode]
+  )
  
   return (
-    <ThemeContext.Provider value={isDarkMode}>
-  <div className="App" style={[{layout}, {isDarkMode}]}>
+    <>
+       
+  <div className="App layout">
       <HashRouter>
         <Nav />
           <Routes>
             <Route exact path="/" element={
               <Homepage
-              checked={darkMode}
-              darkTheme={darkTheme}
              />
              }/>
           </Routes>
@@ -44,8 +46,6 @@ function App() {
           <Routes>
             <Route exact path="/about" element={
               <About 
-                darkTheme={darkTheme}
-                checked={darkMode}
               />
             }/>
           </Routes>
@@ -53,16 +53,16 @@ function App() {
           <Routes>
             <Route exact path="/projects" element={
             <ProjectMain
-              darkTheme={darkTheme}
-              checked={darkMode}
             />
             }/>
           </Routes>
 
-        <Footer />
+        <Footer
+          darkMode={darkMode}
+          setDarkMode={setDarkMode} />
       </HashRouter>  
     </div>
-    </ThemeContext.Provider>
+    </>
   );
 }
 

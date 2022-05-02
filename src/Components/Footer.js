@@ -1,14 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-//css files
+
 import '../css/layout.css';
-// import darkModeCSS from '../css/darkMode.css';
-// import lightModeCSS from '../css/lightMode.css';
 import DarkModeToggle from './DarkModeToggle';
 
-function Footer({ checked }) {
-
-  const [darkMode, setDarkMode] = useState(false);
+function Footer({ darkMode, setDarkMode }) {
 
   return (
     <div id="footer" className="font-lato">
@@ -16,7 +12,9 @@ function Footer({ checked }) {
         <p>Made with  &#10024; by Grace Aranico</p>
       </div>
       <div className="switch">
-        <DarkModeToggle />
+        <DarkModeToggle
+         darkMode={darkMode}
+         setDarkMode={setDarkMode}/>
       </div>
     </div>
   )
