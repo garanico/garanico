@@ -1,9 +1,5 @@
 import React from 'react';
-
-//css files
 import '../css/layout.css';
-// import darkModeCSS from '../css/darkMode.css';
-// import lightModeCSS from '../css/lightMode.css';
 import grace from '../img/grace.JPG';
 
 function Homepage({ checked }) {
