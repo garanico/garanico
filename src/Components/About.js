@@ -42,67 +42,67 @@ function About({ checked }) {
           <div className="skills-icons">
             <div className="icon-container">
               <i class="fab fa-html5 skill-icon">
-                <p className="skill-text font-lato">HTML</p>
+                <p className="skill-text font-roboto">HTML</p>
               </i>
             </div>
 
             <div className="icon-container">
               <i class="fab fa-css3-alt skill-icon">
-                <p className="skill-text font-lato">CSS</p>
+                <p className="skill-text font-roboto">CSS</p>
               </i>
             </div>
 
             <div className="icon-container">
               <i class="fab fa-js-square skill-icon">
-                <p className="skill-text font-lato">JavaScript</p>
+                <p className="skill-text font-roboto">JavaScript</p>
               </i>
             </div>
 
             <div className="icon-container">
               <i class="fab fa-react skill-icon">
-                <p className="skill-text font-lato">React</p>
+                <p className="skill-text font-roboto">React</p>
               </i>
             </div>
 
             <div className="icon-container">
               <i class="fab fa-git-square skill-icon">
-                <p className="skill-text font-lato">Git</p>
+                <p className="skill-text font-roboto">Git</p>
               </i>
             </div>
 
             <div className="icon-container">
               <i class="fab fa-github skill-icon">
-                <p className="skill-text font-lato">GitHub</p>
+                <p className="skill-text font-roboto">GitHub</p>
               </i>
             </div>
 
             <div className="icon-container">
               <i class="far fa-chart-bar skill-icon">
-                <p className="skill-text font-lato">Google Analytics</p>
+                <p className="skill-text font-roboto">Google Analytics</p>
               </i>
             </div>
 
             <div className="icon-container">
               <i class="fas fa-search skill-icon">
-                <p className="skill-text font-lato">Google Ads</p>
+                <p className="skill-text font-roboto">Google Ads</p>
               </i>
             </div>
 
             <div className="icon-container">
               <i class="fab fa-facebook-square skill-icon">
-                <p className="skill-text font-lato">Facebook Business Manager</p>
+                <p className="skill-text font-roboto">Facebook Business Manager</p>
               </i>
             </div>
 
             <div className="icon-container">
               <i class="fab fa-linkedin-in skill-icon">
-                <p className="skill-text font-lato">LinkedIn Ads</p>
+                <p className="skill-text font-roboto">LinkedIn Ads</p>
               </i>
             </div>
 
             <div className="icon-container">
               <i class="fas fa-desktop skill-icon">
-                <p className="skill-text font-lato">Programmatic Display</p>
+                <p className="skill-text font-roboto">Programmatic Display</p>
               </i>
             </div>
 

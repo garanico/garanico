@@ -1,17 +1,86 @@
-button {
-    background-color: black;
-    color: white;
-  }
+:root {
+  --raisinBlack: #1a1b25;
+  --black: #070707;
+  --jet: #2f2f2f;
+  --davysGrey: #50514f;
+  --white: #fcfcfc;
+  --hotPink: #d90368;
+  --turquoise: #55d6c2;
+  --purple: #775576;
+  background-color: var(--jet);
+  color: var(--white);
+  
 
-button:hover{
-    filter: drop-shadow(1px 7px 0.75rem #ccc);  
 }
 
-.fa-git{
-    filter: drop-shadow(1px 7px 0.75rem #ccc);
-  }
+h1 {
+  color: var(--hotPink);
+  text-shadow: (10px 10px 2px var(--white));
+}
+h2 {
+  color: var(--hotPink);
+}
 
+button {
+    background-color: var(--turquoise);
+    color: var(--raisinBlack);
+    box-shadow: 1px 2px 2px var(--white);
+}
+
+button:hover{
+    box-shadow: -0.25px 1px 1px var(--white);
+    background-color: var(--hotPink); 
+    color: var(--white);
+}
+
+
+.fab, .fas, .far{
+    color: var(--white);
+}
+
+#navbar a {
+  color: var(--white);
+}
 
 #homepage .photo {
-    border-color: lightblue;
+    border-color: var(--hotPink);
+}
+
+#homepage .social-icons .fab:hover {
+  transform: scale(1.1);
+}
+
+#about .contact {
+  background-color: var(--turquoise);
+  color: var(--raisinBlack);
+}
+
+#about .social-icons .fab {
+  color: var(--raisinBlack);
+}
+#about .social-icons .fab:hover {
+  transform: scale(1.1);
+}
+
+#about .contact button {
+  background-color: var(--purple);
+  color: var(--white);
+  filter: drop-shadow(0 1px 0.2rem var(--jet));
+}
+
+#about .contact button:hover{
+  filter: drop-shadow(0 1px 0.2rem var(--jet));
+  background-color: var(--hotPink); 
+  color: var(--raisinBlack);
+}
+
+
+#projects img:hover {
+  border-color: var(--turquoise);
+  
+}
+
+#footer {
+  background-color: var(--black);
+  color: var(--white); 
 }

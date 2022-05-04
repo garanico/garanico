@@ -16,7 +16,9 @@ function Homepage({ checked }) {
       </div>
 
         <div className="intro-text">
-          <p>Oh hey!</p>
+          <div className="oh-hey">
+            <p>Oh hey!</p>
+          </div>
           <h1 className="font-playfair">I'm Grace</h1>
           <p>A Front-End Web Developer passionate about creating digital experiences that are equal parts functional and beautiful.</p>
 

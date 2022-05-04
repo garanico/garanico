@@ -37,29 +37,21 @@ function App() {
       <HashRouter>
         <Nav />
           <Routes>
-            <Route exact path="/" element={
-              <Homepage
-             />
-             }/>
+            <Route exact path="/" element={<Homepage/>}/>
           </Routes>
 
           <Routes>
-            <Route exact path="/about" element={
-              <About 
-              />
-            }/>
+            <Route exact path="/about" element={<About />}/>
           </Routes>
 
           <Routes>
-            <Route exact path="/projects" element={
-            <ProjectMain
-            />
-            }/>
+            <Route exact path="/projects" element={<ProjectMain/>}/>
           </Routes>
 
         <Footer
           darkMode={darkMode}
-          setDarkMode={setDarkMode} />
+          setDarkMode={setDarkMode} 
+        />
       </HashRouter>  
     </div>
     </>

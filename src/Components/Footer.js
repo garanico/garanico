@@ -8,7 +8,7 @@ function Footer({ darkMode, setDarkMode }) {
 
   return (
     <div id="footer" className="font-lato">
-      <div>
+      <div className="footer-text">
         <p>Made with  &#10024; by Grace Aranico</p>
       </div>
       <div className="switch">
