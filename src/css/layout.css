@@ -197,6 +197,10 @@ button {
   font-size: 36px;
 }
 
+#homepage .social-icons a:hover {
+  transform: scale(1.1);
+}
+
 @media screen and (max-width > 1200px) {
   
 }
