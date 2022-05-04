@@ -25,9 +25,11 @@ function Homepage({ checked }) {
 
           <div className="contact-links">
             <div className="button">
-              <button>
-                view my resume
-              </button>
+              <a href="https://drive.google.com/file/d/1RsI_5HCSWTqrTA7DTv2oCfuk8UaTs-Oa/view?usp=sharing" target="_blank" rel="noopener">
+                <button>
+                  view my resume
+                </button>
+              </a>
             </div>
 
             <div className="social-icons">
