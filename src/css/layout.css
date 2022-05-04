@@ -66,7 +66,7 @@ button {
 #navbar .nav-links {
   display: flex;
   flex-direction: row;
-  width: 30%;
+  width: 25%;
   justify-content: space-between;
   font-size: 16px;
   text-decoration: none;
@@ -87,7 +87,7 @@ button {
   text-decoration: underline;
 }
 
-@media screen and (max-width > 1200px) {
+@media screen and (width > 1200px) {
   #navbar .nav-links {
     width: 15%;
   }
