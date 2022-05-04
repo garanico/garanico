@@ -1,4 +1,6 @@
-/* Global Styles */
+/* ===============
+  GLOBAL STYLES 
+  =============== */
 * {
   margin: 0; 
   padding: 0;
@@ -8,11 +10,13 @@
 h1 {
   padding-bottom: 10px;
   font-size: 36px;
+  font-family: "Playfair Display", serif;
 }
 
 p {
   padding-bottom: 20px;
   font-size: 18px;
+  font-family: "Roboto", sans-serif;
 }
 
 button {
@@ -24,6 +28,7 @@ button {
   margin: 10px 0 10px 0;
 }
 
+
 .container {
   margin: auto;
   max-width: 1200px;
@@ -34,7 +39,7 @@ button {
   min-width: 280px;
   width: '100%';
   height: 100vh;
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
 }
 .font-playfair {
   font-family: "Playfair Display", serif;
@@ -44,7 +49,10 @@ button {
 .font-roboto {
   font-family: 'Roboto', sans-serif;
 }
-/* Nav Styling */
+
+/* ===============
+  NAVBAR STYLES 
+  =============== */
 #navbar {
   display: flex;
   align-items: center;
@@ -113,6 +121,9 @@ button {
     width: 50%;
     padding-bottom: 10px;
   }
+  #navbar .nav-links a {
+    padding-bottom: 10px;
+  }
   #navbar p {
     margin-top: 10px;
   }
@@ -135,13 +146,16 @@ button {
 }
 
 
-/* Homepage Styles */
+/* ===============
+  HOMEPAGE STYLES 
+  =============== */
 #homepage {
   display: flex;
   flex-grow: 1;
   flex-direction: column;
   justify-content: space-between;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   justify-content: center;
   padding: 10px 10px 110px 10px;
   align-self: center;
@@ -188,6 +202,10 @@ button {
   flex-direction: row;
   justify-content: space-evenly;
   margin-top: 20px;
+}
+
+#homepage .button p {
+  padding: 0px;
 }
 
 #homepage .social-icons {
@@ -240,7 +258,9 @@ button {
   }
 
   #homepage .intro-text {
+    width: 75%;
     text-align: center;
+    padding: 10px;
   }
 
   #homepage .photo {
@@ -261,7 +281,9 @@ button {
  
 }
 
-/* About Styles */
+/* ===============
+  ABOUT PAGE STYLES 
+  =============== */
 #about {
   display: flex;
   flex-direction: column;
@@ -452,7 +474,9 @@ button {
 }
 
 
-/* Project Main Page Styling */
+/* ===============
+  PROJECTS SECTION PAGE STYLES 
+  =============== */
 #projects {
   display: flex;
   flex-direction: column;
@@ -505,7 +529,6 @@ button {
     width: 100%;
     margin-top: 25px;
     justify-content: center;
-    font-weight: bold;
   }
   #projects .card {
     margin: 10px;
@@ -535,7 +558,9 @@ button {
 }
 
 
-/* Footer Styles */
+/* ===============
+  FOOTER STYLES 
+  =============== */
 #footer {
   display: flex;
   justify-content: center;
@@ -583,19 +608,15 @@ button {
   #footer .footer-text {
     width: 100%;
   }
-
   #footer .footer-text p {
     padding-bottom: 0px;
     line-height: 75px;
     font-size: 16px;
   }
-  
-
   #footer .switch {
     display: flex;
     position: relative;
   }
-
 }
 
 @media screen and (max-width: 550px ) {

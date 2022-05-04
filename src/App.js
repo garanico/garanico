@@ -1,8 +1,7 @@
 import { useState, useEffect} from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
+import './css/layout.css';
 
-//css files
-import layout from './css/layout.css';
 
 
 //components
