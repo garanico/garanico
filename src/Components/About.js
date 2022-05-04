@@ -26,9 +26,11 @@ function About({ checked }) {
             
 
             <a href="https://drive.google.com/file/d/1RsI_5HCSWTqrTA7DTv2oCfuk8UaTs-Oa/view?usp=sharing" target="_blank" rel="noreferrer">
-              <button>
-                view my resume
-              </button>
+              <div className="button">
+                <button>
+                  <p className="font-roboto">view my resume</p>
+                </button>
+              </div>
             </a>
           </div>
 
@@ -119,7 +121,7 @@ function About({ checked }) {
             <div className="contact-links">
               <div className="button">
                 <button>
-                  email me
+                  <p className="font-roboto">email me</p>
                 </button>
               </div>
 
