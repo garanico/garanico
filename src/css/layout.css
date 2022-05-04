@@ -1,6 +1,4 @@
-/* ===============
-  GLOBAL STYLES 
-  =============== */
+/* GLOBAL STYLES */
 * {
   margin: 0; 
   padding: 0;
@@ -50,9 +48,7 @@ button {
   font-family: 'Roboto', sans-serif;
 }
 
-/* ===============
-  NAVBAR STYLES 
-  =============== */
+/* NAVBAR STYLES */
 #navbar {
   display: flex;
   align-items: center;
@@ -146,9 +142,7 @@ button {
 }
 
 
-/* ===============
-  HOMEPAGE STYLES 
-  =============== */
+/* HOMEPAGE STYLES */
 #homepage {
   display: flex;
   flex-grow: 1;
@@ -281,9 +275,7 @@ button {
  
 }
 
-/* ===============
-  ABOUT PAGE STYLES 
-  =============== */
+/* ABOUT PAGE STYLES */
 #about {
   display: flex;
   flex-direction: column;
@@ -474,9 +466,7 @@ button {
 }
 
 
-/* ===============
-  PROJECTS SECTION PAGE STYLES 
-  =============== */
+/* PROJECTS MAIN PAGE STYLES */
 #projects {
   display: flex;
   flex-direction: column;
@@ -558,9 +548,7 @@ button {
 }
 
 
-/* ===============
-  FOOTER STYLES 
-  =============== */
+/* FOOTER STYLES */
 #footer {
   display: flex;
   justify-content: center;
