@@ -25,7 +25,10 @@ button {
   text-align: center;
   margin: 10px 0 10px 0;
 }
-
+.button p {
+  font-size: 14px;
+  padding: 0;
+}
 
 .container {
   margin: auto;
@@ -283,7 +286,6 @@ button {
   flex-grow: 1;
   justify-content: center;
   overflow: auto;
-  /* padding: 10px; */
   padding-bottom: 100px;
 }
 
@@ -557,6 +559,130 @@ button {
   }
 }
 
+/* PROJECT DETAIL PAGE STYLES */
+.project-detail-container {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  overflow: scroll;
+  margin:auto;
+  padding: 40px 0 100px 0;
+  max-width: 1200px;
+}
+.project-detail-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 50%;
+}
+.tech-stack-list{
+  font-style: italic;
+  font-size: 12px;
+  word-spacing: 5px;
+  margin-left: 10px;
+}
+.tech-stack-list span{
+  font-style: normal;
+}
+
+.project-name {
+  margin-left: 10px;
+
+}
+
+.project-small-description{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 0 10px 0 40px;
+  font-weight: bold;
+}
+
+.project-long-description{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  display: flex;
+  margin: 0 10px 0 70px;
+}
+.project-button-container{
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin-left: 70px;
+  justify-content: space-between;
+}
+
+.project-image-container{
+  width: 50%;
+  background-color: lightblue;
+}
+
+@media screen and (max-width: 900px) {
+  .project-button-container{
+    width: 80%;
+    margin-left: 70px;
+    justify-content: space-between;
+  }
+
+}
+
+
+@media screen and (max-width: 720px) {
+  .project-detail-container {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    width: 100%;
+  }
+  .project-detail-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  .tech-stack-list{
+    font-style: italic;
+    font-size: 12px;
+    word-spacing: 5px;
+    margin: 0 auto;
+  }
+  .tech-stack-list span{
+    font-style: normal;
+  }
+  
+  .project-small-description{
+    text-align: center;
+    margin: 0 auto;
+
+  }
+  
+  .project-long-description{
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 100%;
+  
+  }
+  .project-button-container{
+    width: 70%;
+    margin: auto;
+    justify-content: space-evenly;
+  }
+  
+  .project-image-container{
+    width: 100%;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 550px ) {
+  .project-button-container{
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
 
 /* FOOTER STYLES */
 #footer {
@@ -587,15 +713,6 @@ button {
   justify-self: flex-end;
 }
 
-@media screen and (max-width > 1200px) {
-  
-}
-
-@media screen and (max-width: 900px) {
-
-}
-
-
 @media screen and (max-width: 720px) {
   #footer {
     display: flex;
@@ -617,12 +734,5 @@ button {
   }
 }
 
-@media screen and (max-width: 550px ) {
-  
-}
-
-@media screen and (max-width: 375px ) {
- 
-}
 
 

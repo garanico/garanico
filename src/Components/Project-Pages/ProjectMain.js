@@ -1,8 +1,7 @@
-import React from 'react'
-
-//css files
+import React from 'react';
+import { Link } from 'react-router-dom';
 import '../../../src/css/layout.css';
-// import darkModeCSS from  '../../../src/css/darkMode.css';
+
 
 //images
 import decidr from '../../img/project-img/decidr.png';
@@ -24,29 +23,29 @@ function ProjectMain({ checked }) {
           <p>click on any project to learn more!</p>
         </div>
         
-        <a href="https://garanico.github.io/decidr-app/" rel="noopener">
+        <Link to={"/projects/decidr"}>
           <img className="card" src={decidr} alt="decidr decision making app" />
-        </a>
+        </Link>
 
-        <a href="https://luceroweb.github.io/haunted-house-game/#/" rel="noopener">
+        <Link to={"/projects/haunted-house"}>
           <img className="card" src={hauntedHouse} alt="The Haunted House Game choose your own adventure game" />
-        </a>
+        </Link>
 
-        <a href="https://garanico.github.io/javascript-final-project/" rel="noopener">
+        <Link to={"/projects/magic-8ball"}>
           <img className="card" src={magic8Ball} alt="Harry Potter themed magic 8 ball project" />
-        </a>
+        </Link>
 
-        <a href="https://garanico.github.io/decidr-app/" rel="noopener">
+        <Link to={"/projects/trivia-chill"}>
           <img className="card" src={triviaChill} alt="An art-deco designed movie trivia game" />
-        </a>
+        </Link>
 
-        <a href="https://garanico.github.io/w4b-final-project/" rel="noopener">
+        <Link to={"/projects/w4b"}>
           <img className="card" src={w4b} alt="A Harry Potter Maurader's Map themed website" />
-        </a>
+        </Link>
 
-        <a href="https://garanico.github.io/decidr-app/" rel="noopener">
+        <Link to={"/projects/decidr"}>
           <img className="card" src={decidr} alt="decidr decision making app" />
-        </a>
+        </Link>
 
 
 

@@ -10,6 +10,12 @@ import Nav from './Components/Nav';
 import Homepage from './Components/Homepage';
 import About from './Components/About';
 import ProjectMain from './Components/Project-Pages/ProjectMain';
+import Decidr from './Components/Project-Pages/Decidr';
+import HauntedHouse from './Components/Project-Pages/HauntedHouse';
+import Magic8Ball from './Components/Project-Pages/Magic8Ball';
+import TriviaChill from './Components/Project-Pages/TriviaChill';
+import W4B from './Components/Project-Pages/W4B';
+
 
 
 function App() {
@@ -45,6 +51,12 @@ function App() {
 
           <Routes>
             <Route exact path="/projects" element={<ProjectMain/>}/>
+            <Route exact path="/projects/decidr" element={<Decidr/>}/>
+            <Route exact path="/projects/haunted-house" element={<HauntedHouse />}/>
+            <Route exact path="/projects/magic-8ball" element={<Magic8Ball/>}/>
+            <Route exact path="/projects/trivia-chill" element={<TriviaChill/>}/>
+            <Route exact path="/projects/w4b" element={<W4B/>}/>
+            <Route exact path="/projects/decidr" element={<Decidr/>}/>
           </Routes>
 
         <Footer
