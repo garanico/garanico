@@ -37,7 +37,7 @@ function Decidr() {
 
           <div className="button">
             <a href="" target="_blank" rel="noreferrer">
-              <button>
+              <button className="code-btn">
                 <p className="playfair-roboto">view code</p>
               </button>
             </a>
