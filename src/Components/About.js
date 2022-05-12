@@ -3,7 +3,12 @@ import '../css/App.css'
 import grace from '../img/grace.JPG';
 
 
-function About({ checked }) {
+function About() {
+
+  const sendEmail = () => {
+    let mailto = `mailto:grace.aranico@gmail.com`
+    window.open(mailto);
+  }
   return (
     <main id="about">
 
@@ -44,67 +49,67 @@ function About({ checked }) {
 
           <div className="skills-icons">
             <div className="icon-container">
-              <i class="fab fa-html5 skill-icon">
+              <i className="fab fa-html5 skill-icon">
                 <p className="skill-text font-roboto">HTML</p>
               </i>
             </div>
 
             <div className="icon-container">
-              <i class="fab fa-css3-alt skill-icon">
+              <i className="fab fa-css3-alt skill-icon">
                 <p className="skill-text font-roboto">CSS</p>
               </i>
             </div>
 
             <div className="icon-container">
-              <i class="fab fa-js-square skill-icon">
+              <i className="fab fa-js-square skill-icon">
                 <p className="skill-text font-roboto">JavaScript</p>
               </i>
             </div>
 
             <div className="icon-container">
-              <i class="fab fa-react skill-icon">
+              <i className="fab fa-react skill-icon">
                 <p className="skill-text font-roboto">React</p>
               </i>
             </div>
 
             <div className="icon-container">
-              <i class="fab fa-git-square skill-icon">
+              <i className="fab fa-git-square skill-icon">
                 <p className="skill-text font-roboto">Git</p>
               </i>
             </div>
 
             <div className="icon-container">
-              <i class="fab fa-github skill-icon">
+              <i className="fab fa-github skill-icon">
                 <p className="skill-text font-roboto">GitHub</p>
               </i>
             </div>
 
             <div className="icon-container">
-              <i class="far fa-chart-bar skill-icon">
+              <i className="far fa-chart-bar skill-icon">
                 <p className="skill-text font-roboto">Google Analytics</p>
               </i>
             </div>
 
             <div className="icon-container">
-              <i class="fas fa-search skill-icon">
+              <i className="fas fa-search skill-icon">
                 <p className="skill-text font-roboto">Google Ads</p>
               </i>
             </div>
 
             <div className="icon-container">
-              <i class="fab fa-facebook-square skill-icon">
+              <i className="fab fa-facebook-square skill-icon">
                 <p className="skill-text font-roboto">Facebook Business Manager</p>
               </i>
             </div>
 
             <div className="icon-container">
-              <i class="fab fa-linkedin-in skill-icon">
+              <i className="fab fa-linkedin-in skill-icon">
                 <p className="skill-text font-roboto">LinkedIn Ads</p>
               </i>
             </div>
 
             <div className="icon-container">
-              <i class="fas fa-desktop skill-icon">
+              <i className="fas fa-desktop skill-icon">
                 <p className="skill-text font-roboto">Programmatic Display</p>
               </i>
             </div>
@@ -120,7 +125,7 @@ function About({ checked }) {
 
             <div className="contact-links">
               <div className="button">
-                <button>
+                <button onClick={sendEmail}>
                   <p className="font-roboto">email me</p>
                 </button>
               </div>

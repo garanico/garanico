@@ -2,7 +2,7 @@ import React from 'react';
 import '../css/App.css';
 import grace from '../img/grace.JPG';
 
-function Homepage({ checked }) {
+function Homepage() {
   return (
     <main id="homepage">
       <section className="container-1">
