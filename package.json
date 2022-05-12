@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://garanico.github.io/portfolio",
+  "homepage": "https://www.gracearanico.com",
   "private": true,
   "dependencies": {
     "@react-navigation/native": "^6.0.10",
