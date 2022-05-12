@@ -1,4 +1,4 @@
-import { useState, useEffect} from 'react';
+import { useState} from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import './css/App.css';
 
@@ -20,20 +20,6 @@ import W4B from './Components/Project-Pages/W4B';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
-
-  // useEffect (
-  //   () => {
-  //     let head = document.head;
-  //     let link = document.createElement("link");
-  //     link.type = "text/css";
-  //     link.rel = "stylesheet";
-  //     link.href = darkMode ? "./css/darkModeCSS.css" : "./css/lightMode.css";
-  //     head.appendChild(link);
-  //     return () => {
-  //       head.removeChild(link);
-  //     }
-  //   },[darkMode]
-  // )
  
   return (
 
@@ -55,7 +41,6 @@ function App() {
             <Route exact path="/projects/magic-8ball" element={<Magic8Ball/>}/>
             <Route exact path="/projects/trivia-chill" element={<TriviaChill/>}/>
             <Route exact path="/projects/w4b" element={<W4B/>}/>
-            <Route exact path="/projects/decidr" element={<Decidr/>}/>
           </Routes>
 
         <Footer

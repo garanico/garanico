@@ -6,6 +6,7 @@
   --hotPink: #d90368;
   --turquoise: #55d6c2;
   --purple: #775576;
+  --lightBlue: #ADD8E6;
 
   --pageBackground: var(--white);
   --imageBorder: var(--hotPink);
@@ -21,6 +22,8 @@
   --aboutContactBackground: var(--purple);
   --toggleUnchecked: var(--white);
   --toggleChecked: var(--turquoise);
+  --projectBackground1: var(--lightBlue);
+
   
 }
 
@@ -133,6 +136,8 @@ button:hover p {
   width: '100%';
   min-height: 100vh;
   background-color: var(--pageBackground);
+
+
 }
 
 .font-playfair {
@@ -650,6 +655,7 @@ button:hover p {
 }
 
 
+
 @media screen and (max-width: 900px) {
   #projects .card-subtitle {
     display: flex;
@@ -719,6 +725,11 @@ button:hover p {
   display: flex;
   margin: 0 10px 0 70px;
 }
+
+.project-long-description a {
+  text-decoration: underline;
+  color: var(--paragraphFont)
+}
 .project-button-container{
   display: flex;
   flex-direction: row;
@@ -738,7 +749,11 @@ button:hover p {
 
 .project-image-container{
   width: 50%;
-  background-color: lightblue;
+  background-color: var(--projectBackground1)
+}
+
+.project-image-container img{
+  width: 80%;
 }
 
 @media screen and (max-width: 900px) {
@@ -796,6 +811,7 @@ button:hover p {
     width: 100%;
     height: 500px;
   }
+
 }
 
 @media screen and (max-width: 550px ) {

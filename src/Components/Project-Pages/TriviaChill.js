@@ -1,32 +1,33 @@
 import React from 'react';
 import '../../../src/css/App.css';
+import TriviaChillMock from './../../img/project-img/triviaChillMock.png'
 
 function TriviaChill() {
   return (
     <div className="project-detail-container">
       <div className="project-detail-text">
         <div className="tech-stack-list">
-          <p>REACT <span>|</span> RESPONSIVE DESIGN</p>
+          <p>REACT NATIVE <span>|</span> REDUX <span>|</span> AXIOS</p>
         </div>
 
         <div className="project-name">
-          <h1>decidr.</h1>
+          <h1>Trivia &amp; Chill</h1>
         </div>
 
         <div className="project-small-description">
           <p>
-            A simple React app to make a decision when your brain just can't anymore.
+          A trivia game to test your movie knowledge
           </p>
           </div>
           <div className="project-long-description">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet tristique odio, nec lobortis ligula. Fusce at turpis pulvinar, condimentum orci nec, placerat tellus. Duis sed volutpat nisi, quis egestas velit. Praesent ultrices erat est, vel mattis leo vestibulum id. Nulla est lacus, euismod sed ultricies vulputate, blandit a neque. Praesent facilisis tellus sapien, vitae placerat lectus malesuada non. Praesent vitae diam risus
+          Using <a href="https://www.themoviedb.org/documentation/api" target="_blank" rel="noreferrer">The Movie Database API</a> this is a trivia game to test your movie knowledge. Random questions about popular movies could be shown as true/false or multiple choice. Answer correctly to increase your winning streak! If you get a wrong answer, then the game is over.  The player can choose between two different game modes to change the difficulty of the game.
           </p>
         </div>
 
         <div className="project-button-container">
           <div className="button">
-            <a href="" target="_blank" rel="noreferrer">
+            <a href="https://luceroweb.github.io/trivia-and-chill/" target="_blank" rel="noreferrer">
               <button>
                 <p className="playfair-roboto">view live</p>
               </button>
@@ -34,8 +35,8 @@ function TriviaChill() {
           </div>
 
           <div className="button">
-            <a href="" target="_blank" rel="noreferrer">
-              <button>
+            <a href="https://github.com/luceroweb/trivia-and-chill" target="_blank" rel="noreferrer">
+              <button className="code-btn">
                 <p className="playfair-roboto">view code</p>
               </button>
             </a>
@@ -45,7 +46,7 @@ function TriviaChill() {
 
       </div>
       <div className="project-image-container">
-        
+      <img className="project-photo" src={TriviaChillMock} alt="laptop and cell phone with the Trivia &amp; Chill displayed on the screens" />
       </div>
 
     </div>

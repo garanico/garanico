@@ -1,5 +1,7 @@
 import React from 'react';
 import '../../../src/css/App.css';
+import decidrMock from './../../img/project-img/decidrMock.png'
+
 
 function Decidr() {
   return (
@@ -21,13 +23,13 @@ function Decidr() {
           </div>
           <div className="project-long-description">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet tristique odio, nec lobortis ligula. Fusce at turpis pulvinar, condimentum orci nec, placerat tellus. Duis sed volutpat nisi, quis egestas velit. Praesent ultrices erat est, vel mattis leo vestibulum id. Nulla est lacus, euismod sed ultricies vulputate, blandit a neque. Praesent facilisis tellus sapien, vitae placerat lectus malesuada non. Praesent vitae diam risus
+          Can’t decide what to eat tonight?  Or a name for your dog?  No worries!  Enter in your list of options and the app will decide for you by selecting a random option from the list.  
           </p>
         </div>
 
         <div className="project-button-container">
           <div className="button">
-            <a href="" target="_blank" rel="noreferrer">
+            <a href="https://garanico.github.io/decidr-app/" target="_blank" rel="noreferrer">
               <button>
                 <p className="playfair-roboto">view live</p>
               </button>
@@ -35,7 +37,7 @@ function Decidr() {
           </div>
 
           <div className="button">
-            <a href="" target="_blank" rel="noreferrer">
+            <a href="https://github.com/garanico/decidr-app" target="_blank" rel="noreferrer">
               <button className="code-btn">
                 <p className="playfair-roboto">view code</p>
               </button>
@@ -46,6 +48,7 @@ function Decidr() {
 
       </div>
       <div className="project-image-container">
+        <img className="project-photo" src={decidrMock} alt="laptop and cell phone with the Decidr app displayed on the screens" />
         
       </div>
 
