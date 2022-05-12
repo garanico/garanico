@@ -1,5 +1,6 @@
 import React from 'react';
-import '../../../src/css/App.css';
+import '../../../src/css/layout.css';
+import grace from '../../img/grace.JPG';
 
 function Decidr() {
   return (
@@ -36,7 +37,7 @@ function Decidr() {
 
           <div className="button">
             <a href="" target="_blank" rel="noreferrer">
-              <button className="code-btn">
+              <button>
                 <p className="playfair-roboto">view code</p>
               </button>
             </a>
