@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import '../css/layout.css';
+import '../css/App.css';
 
-function Nav({ checked }) {
+function Nav({ darkMode }) {
   return (
 
     <nav id="navbar">

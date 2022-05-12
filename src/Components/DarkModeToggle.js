@@ -1,30 +1,20 @@
-import React, {useState} from 'react';
-import Switch from '@mui/material/Switch';
-import FormGroup from '@mui/material/FormGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
+import React from 'react';
+import '../css/App.css'
 
 
 
-function DarkModeToggle({ darkMode, setDarkMode }) {
-  const [checked, setChecked] = useState(false);
 
-  const handleChange = (event) => {
-    setChecked(event.target.checked);
-    setDarkMode(event.target.checked);
-  };
+function DarkModeToggle({darkMode,setDarkMode }) {
+
 
       return(
-        <FormGroup>
-        <FormControlLabel 
-          control={<Switch
-            checked={checked}  
-            onChange={handleChange}
-            inputProps={{ 'aria-label': 'controlled' }}
-          />}
-          labelPlacement="start"
-          label="Enable Dark Mode" 
-       />
-      </FormGroup>
+        <>
+          <p>Enable Dark Mode</p>
+          <label className="switch">
+            <input type="checkbox" onClick={() => setDarkMode(!darkMode)}/>
+            <span className="slider round"></span>
+          </label>
+        </>
       )
 }
 

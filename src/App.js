@@ -1,6 +1,6 @@
 import { useState, useEffect} from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
-import './css/layout.css';
+import './css/App.css';
 
 
 
@@ -21,24 +21,23 @@ import W4B from './Components/Project-Pages/W4B';
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
-  useEffect (
-    () => {
-      let head = document.head;
-      let link = document.createElement("link");
-      link.type = "text/css";
-      link.rel = "stylesheet";
-      link.href = darkMode ? "./css/darkModeCSS.css" : "./css/lightMode.css";
-      head.appendChild(link);
-      return () => {
-        head.removeChild(link);
-      }
-    },[darkMode]
-  )
+  // useEffect (
+  //   () => {
+  //     let head = document.head;
+  //     let link = document.createElement("link");
+  //     link.type = "text/css";
+  //     link.rel = "stylesheet";
+  //     link.href = darkMode ? "./css/darkModeCSS.css" : "./css/lightMode.css";
+  //     head.appendChild(link);
+  //     return () => {
+  //       head.removeChild(link);
+  //     }
+  //   },[darkMode]
+  // )
  
   return (
-    <>
-       
-  <div className="App layout">
+
+  <div className={`App ${darkMode ? "dm" : null}`} >
       <HashRouter>
         <Nav />
           <Routes>
@@ -65,7 +64,6 @@ function App() {
         />
       </HashRouter>  
     </div>
-    </>
   );
 }
 
