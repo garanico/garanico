@@ -1,6 +1,6 @@
 import { useState, useEffect} from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
-import './css/layout.css';
+import './css/App.css';
 
 
 
@@ -36,9 +36,8 @@ function App() {
   // )
  
   return (
-    <>
-       
-  <div className="App layout">
+
+  <div className={`App ${darkMode ? "dm" : null}`} >
       <HashRouter>
         <Nav />
           <Routes>
@@ -65,7 +64,6 @@ function App() {
         />
       </HashRouter>  
     </div>
-    </>
   );
 }
 

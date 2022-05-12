@@ -1,16 +1,81 @@
-/* GLOBAL STYLES */
 :root {
   --jet: #2f2f2f;
-  --davysGrey: #50514f;
   --raisinBlack: #1a1b25;
-  --black: #070707;
   --white: #fcfcfc;
+  --dmWhite: #cccccc;
   --hotPink: #d90368;
   --turquoise: #55d6c2;
   --purple: #775576;
-  background-color: var(--white);
+
+  --pageBackground: var(--white);
+  --imageBorder: var(--hotPink);
+  --projectBorder: var(--turquoise);
+  --primaryButton: var(--turquoise);
+  --socialIcons: var(--jet);
+  --secondaryButton: var(--purple);
+  --buttonHover: var(--hotPink);
+  --paragraphFont: var(--raisinBlack);
+  --primaryHeading: var(--hotPink);
+  --secondaryHeading: var(--hotPink);
+  --linkVisited: var(--raisinBlack);
+  --aboutContactBackground: var(--purple);
+  --toggleUnchecked: var(--white);
+  --toggleChecked: var(--turquoise);
+  
 }
 
+
+/* Dark Mode */
+.dm{
+  --pageBackground: var(--jet);
+  --border: var(--turquoise);
+  --primaryButton: var(--purple);
+  --paragraphFont: var(--dmWhite);
+  --socialIcons: var(--dmWhite);
+  --secondaryButton: var(--turquoise);
+  --aboutContactBackground: var(--turquoise);
+
+} 
+
+.dm button {
+  filter: drop-shadow(0 1px 0.2rem var(--white));
+}
+.dm button:hover {
+  filter: drop-shadow(0 1px 0.2rem var(--white));
+}
+.dm button p {
+  color: var(--white);
+}
+
+.dm .social-icons a {
+  color: var(--dmWhite);
+}
+
+.dm #navbar a {
+  color: var(--dmWhite);
+}
+
+.dm #about .contact p{
+  color: var(--raisinBlack);
+}
+
+.dm #about .social-icons .fab {
+  color: var(--raisinBlack);
+}
+
+.dm #about .contact button p {
+  color: var(--dmWhite)
+}
+
+.dm .code-btn p {
+  color: var(--raisinBlack);
+}
+
+.dm .code-btn:hover p {
+  color: var(--dmWhite);
+}
+
+/* Light Mode and Layout */
 * {
   margin: 0; 
   padding: 0;
@@ -21,17 +86,18 @@ h1 {
   padding-bottom: 10px;
   font-size: 36px;
   font-family: "Playfair Display", serif;
-  color: var(--hotPink);
+  color: var(--primaryHeading)
 }
 
 h2 {
-  color: var(--hotPink);
+  color: var(--turquoise);
 }
 
 p {
   padding-bottom: 20px;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
+  color: var(--paragraphFont);
 }
 
 button {
@@ -41,36 +107,34 @@ button {
   width: 150px;
   text-align: center;
   margin: 10px 0 10px 0;
-  background-color: var(--turquoise);
-  color: var(--raisinBlack);
-  box-shadow: 0 1.5px 1px var(--davysGrey);
-  filter: drop-shadow(0 1px 0.2rem var(--jet)); 
+  font-weight: bold;
+  background-color: var(--primaryButton);
+  filter: drop-shadow(0 1px 0.1rem var(--jet)); 
 }
 
 button:hover{
-  filter: drop-shadow(0 1px 0.2rem var(--jet)); 
-  background-color: var(--hotPink); 
-  color: var(--white);
+  filter: drop-shadow(0 1px 0.1rem var(--jet)); 
+  background-color: var(--buttonHover); 
 }
 
+button:hover p {
+  color: var(--white);
+}
 
 .button p {
   font-size: 14px;
   padding: 0;
-}
-
-.container {
-  margin: auto;
-  max-width: 1200px;
+  color: var(--raisinBlack);
 }
 
 .App {
   text-align: center;
   min-width: 280px;
   width: '100%';
-  height: 100vh;
-  /* font-family: "Roboto", sans-serif; */
+  min-height: 100vh;
+  background-color: var(--pageBackground);
 }
+
 .font-playfair {
   font-family: "Playfair Display", serif;
   font-weight: bold;
@@ -78,6 +142,10 @@ button:hover{
 
 .font-roboto {
   font-family: 'Roboto', sans-serif;
+}
+
+.social-icons a:visited {
+  font-weight: bold;
 }
 
 /* NAVBAR STYLES */
@@ -106,7 +174,7 @@ button:hover{
 
 #navbar a {
   text-decoration: none;
-  color: var(--raisinBlack)
+  color: var(--raisinBlack);
 }
 
 #navbar a:visited {
@@ -219,7 +287,7 @@ button:hover{
   border-width: 5px;
   border-radius: 30%;
   z-index: 10;
-  border-color: var(--hotPink);
+  border-color: var(--imageBorder);
 }
 
 #homepage .contact-links{
@@ -236,6 +304,7 @@ button:hover{
   padding: 0;
 }
 
+
 #homepage .social-icons {
   width: 30%;
   display: flex;
@@ -245,10 +314,6 @@ button:hover{
 
 #homepage .social-icons a:hover {
   transform: scale(1.1);
-}
-
-@media screen and (max-width > 1200px) {
-  
 }
 
 @media screen and (max-width: 900px) {
@@ -305,10 +370,6 @@ button:hover{
   }
 }
 
-@media screen and (max-width: 375px ) {
- 
-}
-
 /* ABOUT PAGE STYLES */
 #about {
   display: flex;
@@ -330,7 +391,6 @@ button:hover{
   width: 55%;
   justify-content: center;
   margin-left: 50px;
-
 }
 
 #about .about-text h1{
@@ -356,6 +416,10 @@ button:hover{
 
 #about .about-photo img {
   margin: auto;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 30%;
+  border-color: var(--imageBorder);
 }
 
 #about .skills {
@@ -378,12 +442,13 @@ button:hover{
 #about .fab, .fas, .far{
   font-size: 36px;
   margin: 0 10px 0 10px;
-  color: var(--jet);
+  color: var(--socialIcons);
 }
 
 #about .skill-icon {
   font-size: 20px;
   text-align: center;
+  color: var(--socialIcons);
 }
 
 #about .icon-container {
@@ -392,7 +457,7 @@ button:hover{
 
 #about .contact {
   width: 100%;
-  background-color: var(--purple);
+  background-color: var(--aboutContactBackground);
   color: var(--white);
 }
 
@@ -405,6 +470,10 @@ button:hover{
   padding: 40px 0 20px 0;
 }
 
+#about .contact p{
+  color: var(--white);
+}
+
 #about .contact-links{
   display: flex;
   width: 50%;
@@ -415,16 +484,19 @@ button:hover{
   line-height: 50%;
 }
 #about .contact button {
-  background-color: var(--turquoise);
-  color: var(--raisinBlack);
+  background-color: var(--primaryButton);
   box-shadow: 0 1.5px 1px var(--jet);
+}
+
+#about .contact button p {
+  color: var(--raisinBlack)
 }
 
 #about .contact button:hover{
   box-shadow: 0 1.5px 1px var(--jet);
-  background-color: var(--hotPink); 
-  color: var(--white);
+  background-color: var(--buttonHover); 
 }
+
 
 #about .social-icons {
   width: 20%;
@@ -433,7 +505,7 @@ button:hover{
   font-size: 36px;
 }
 #about .social-icons .fab {
-  color: var(--raisinBlack);
+  color: var(--socialIcons);
   transform: scale(1.1);
 }
 
@@ -452,7 +524,7 @@ button:hover{
     justify-content: center;
     margin-left: 20px;
   }
-  #about .about-photo {
+  #about .about-photo img{
     width: 55%;
   }
   .skills-icons {
@@ -574,7 +646,7 @@ button:hover{
   border-style: solid;
   border-width: 10px;
   border-radius:10px;
-  border-color: var(--turquoise);
+  border-color: var(--projectBorder);
 }
 
 
@@ -593,16 +665,6 @@ button:hover{
   }  
 }
 
-
-@media screen and (max-width: 720px) {
-  
-  
-}
-
-@media screen and (max-width: 550px ) {
-  
-}
-
 @media screen and (max-width: 375px ) {
   #projects .card {
     margin: 5px;
@@ -617,7 +679,6 @@ button:hover{
   display: flex;
   flex-direction: row;
   flex-grow: 1;
-  overflow: scroll;
   margin:auto;
   padding: 40px 0 100px 0;
   max-width: 1200px;
@@ -667,7 +728,11 @@ button:hover{
 }
 
 .code-btn {
-  background-color: var(--purple);
+  background-color: var(--secondaryButton);
+  color: var(--white);
+}
+
+.code-btn p {
   color: var(--white);
 }
 
@@ -682,7 +747,6 @@ button:hover{
     margin-left: 70px;
     justify-content: space-between;
   }
-
 }
 
 
@@ -745,34 +809,46 @@ button:hover{
 /* FOOTER STYLES */
 #footer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   padding: 10px 0;
   height: 100px;
   align-items: center;
   position: fixed;
   bottom: 0;
   width: 100%;
-  margin-top: auto;
   background-color: var(--raisinBlack);
   color: var(--white);
 }
 
 #footer .footer-text {
-  width: 500px;
+  width: 300px;
 }
 
 #footer p{
-  line-height: 100px;
+  line-height: 50px;
+  color: var(--white);
+  padding-bottom: 4px;
 }
+
+#footer .toggle{
+  display: flex;
+  width: 250px;
+  height: 34px;
+  justify-content: space-evenly;
+}
+
+#footer .toggle p{
+  line-height: 34px;
+}
+
 #footer .switch {
   position: relative;
-  display: inline-block;
   width: 60px;
   height: 34px;
 }
 
 /* Hide default HTML checkbox */
-.switch input {
+#footer .switch input {
   opacity: 0;
   width: 0;
   height: 0;
@@ -781,7 +857,6 @@ button:hover{
 /* The slider */
 .slider {
   position: absolute;
-  cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
@@ -798,17 +873,17 @@ button:hover{
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  background-color: var(--toggleUnchecked);
   -webkit-transition: .4s;
   transition: .4s;
 }
 
 input:checked + .slider {
-  background-color: #55d6c2;
+  background-color: var(--toggleChecked);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #55d6c2;
+  box-shadow: 0 0 1px var(--toggleChecked);
 }
 
 input:checked + .slider:before {
@@ -846,6 +921,5 @@ input:checked + .slider:before {
     position: relative;
   }
 }
-
 
 

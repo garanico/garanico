@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/layout.css';
+import '../css/App.css';
 import grace from '../img/grace.JPG';
 
 function Homepage({ checked }) {

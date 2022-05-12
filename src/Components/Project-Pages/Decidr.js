@@ -1,6 +1,5 @@
 import React from 'react';
-import '../../../src/css/layout.css';
-import grace from '../../img/grace.JPG';
+import '../../../src/css/App.css';
 
 function Decidr() {
   return (

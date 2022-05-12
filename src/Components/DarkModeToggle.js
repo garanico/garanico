@@ -1,17 +1,20 @@
 import React from 'react';
-import layout from '../css/layout.css';
+import '../css/App.css'
 
 
 
 
 function DarkModeToggle({darkMode,setDarkMode }) {
-  const
+
 
       return(
-        <label className="switch">
-          <input type="checkbox" onClick={}/>
-          <span className="slider round"></span>
-        </label>
+        <>
+          <p>Enable Dark Mode</p>
+          <label className="switch">
+            <input type="checkbox" onClick={() => setDarkMode(!darkMode)}/>
+            <span className="slider round"></span>
+          </label>
+        </>
       )
 }
 

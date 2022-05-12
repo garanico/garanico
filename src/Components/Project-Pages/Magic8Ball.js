@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../src/css/layout.css';
+import '../../../src/css/App.css';
 
 function Magic8Ball() {
   return (
