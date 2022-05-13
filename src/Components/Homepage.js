@@ -21,7 +21,7 @@ function Homepage() {
 
           <div className="contact-links">
             <div className="button">
-              <a href="https://drive.google.com/file/d/1RsI_5HCSWTqrTA7DTv2oCfuk8UaTs-Oa/view?usp=sharing" target="_blank" rel="noreferrer">
+              <a href="https://drive.google.com/file/d/1A2iXGhzl5e_zhKXYGQa70EbrqobxErkF/view?usp=sharing" target="_blank" rel="noreferrer">
                 <button>
                   <p className="playfair-roboto">view my resume</p>
                 </button>
