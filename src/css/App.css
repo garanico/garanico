@@ -50,6 +50,11 @@
   color: var(--white);
 }
 
+.dm img {
+  filter: grayscale(10%);
+  opacity: 85%; 
+}
+
 .dm .social-icons a {
   color: var(--dmWhite);
 }
