@@ -42,13 +42,6 @@ function ProjectMain({ checked }) {
         <Link to={"/projects/w4b"}>
           <img className="card" src={w4b} alt="A Harry Potter Maurader's Map themed website" />
         </Link>
-
-        <Link to={"/projects/decidr"}>
-          <img className="card" src={decidr} alt="decidr decision making app" />
-        </Link>
-
-
-
       </div>
 
 
