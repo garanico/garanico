@@ -842,6 +842,9 @@ button:hover p {
 }
 
 @media screen and (max-width: 550px ) {
+  .project-detail-container {
+    padding-top: 200px;
+  }
   .project-button-container{
     width: 100%;
     flex-direction: column;
