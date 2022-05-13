@@ -112,7 +112,7 @@ button {
   margin: 10px 0 10px 0;
   font-weight: bold;
   background-color: var(--primaryButton);
-  filter: drop-shadow(0 1px 0.1rem var(--jet)); 
+  filter: drop-shadow(0 1px 0.1rem var(--jet));
 }
 
 button:hover{
@@ -162,6 +162,9 @@ button:hover p {
   padding: 0 10px;
   height: 6vh;
   width: 100%;
+  position: fixed;
+  background-color: var(--pageBackground);
+  z-index: 2; 
 }
 
 #navbar .logo-container a {
@@ -258,6 +261,7 @@ button:hover p {
   justify-content: center;
   padding: 10px 10px 110px 10px;
   align-self: center;
+  padding-top: 6vh;
 }
 
 #homepage h1 {
@@ -383,6 +387,7 @@ button:hover p {
   justify-content: center;
   overflow: auto;
   padding-bottom: 100px;
+  padding-top: 6vh;
 }
 
 
@@ -547,6 +552,9 @@ button:hover p {
 
 
 @media screen and (max-width: 720px) {
+  #about{
+    padding-top: 9vh;
+  }
   #about .about-text h1{
     font-size: 30px;
   }
@@ -570,6 +578,10 @@ button:hover p {
 }
 
 @media screen and (max-width: 550px ) {
+
+  #about{
+    padding-top: 20vh;
+  }
   #about .about-me {
     display: flex;
     flex-direction: column-reverse;
@@ -614,6 +626,7 @@ button:hover p {
   padding-top: 50px;
   width: 100%;
   padding-bottom: 100px;
+  padding-top: 6vh;
 }
 
 #projects .project-heading p {
@@ -671,6 +684,20 @@ button:hover p {
   }  
 }
 
+@media screen and (max-width: 720px) {
+  #projects  {
+    padding-top: 15vh;
+  }
+    
+}
+
+@media screen and (max-width: 550px) {
+  #projects  {
+    padding-top: 22vh;
+  }
+    
+}
+
 @media screen and (max-width: 375px ) {
   #projects .card {
     margin: 5px;
@@ -686,7 +713,7 @@ button:hover p {
   flex-direction: row;
   flex-grow: 1;
   margin:auto;
-  padding: 40px 0 100px 0;
+  padding: 150px 0 100px 0;
   max-width: 1200px;
 }
 .project-detail-text {
@@ -937,5 +964,4 @@ input:checked + .slider:before {
     position: relative;
   }
 }
-
 
